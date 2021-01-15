@@ -7,7 +7,7 @@ const app = express()
 
 app.use(cors())
 
-const connection_url = 'mongodb+srv://admin:2eHJQ6XDioIwYwgR@cluster0.91nul.mongodb.net/graphqLReactDB?retryWrites=true&w=majority'
+const connection_url = 'mongodb+srv://admin:pass@cluster0.91nul.mongodb.net/graphqLReactDB?retryWrites=true&w=majority'
 mongoose.connect(connection_url, {
     useNewUrlParser: true,
     useCreateIndex: true,
