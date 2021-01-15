@@ -1,0 +1,75 @@
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.main h1{
+  color: #444;
+  text-align: center;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.book-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+}
+
+form{
+  background: #fff;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+}
+
+form .field{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+form label{
+  text-align: right;
+  padding: 6px;
+}
+
+form input, form select{
+  margin: 4px 0;
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+form button{
+  color: #fff;
+  font-size: 2em;
+  background: #AD1457;
+  border: 0;
+  padding: 0 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+#book-details{
+  width: 500px;
+  background: #AD1457;
+  padding: 30px;
+  overflow: auto;
+  box-shadow: -2px -3px 5px rgba(0,0,0,0.3);
+  box-sizing: border-box;
+  color: #fff;
+}

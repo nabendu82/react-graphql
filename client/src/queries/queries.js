@@ -1,0 +1,36 @@
+import { gql } from '@apollo/client';
+
+const getAuthorsQuery = gql`
+    {
+        authors {
+            name
+            id
+        }
+    }
+`;
+
+const getBooksQuery = gql`
+    {
+        books {
+            name
+            id
+            genre
+            author{
+                name
+                age
+            }
+        }
+    }
+`;
+
+const addBookMutation = gql`
+    mutation AddBook($name: String!, $genre: String!, $authorId: ID!){
+        addBook(name: $name, genre: $genre, authorId: $authorId){
+            name
+            id
+        }
+    }
+`;
+
+
+export { getAuthorsQuery, getBooksQuery, addBookMutation };
